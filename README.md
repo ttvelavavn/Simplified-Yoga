@@ -1,4 +1,0 @@
-Simplified-Yoga
-===============
-
-Simplified Yoga
