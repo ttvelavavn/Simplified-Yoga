@@ -51,34 +51,46 @@
   padding-left: 15px;
 }
 
+.main {
+  padding: 0px;
+}
+
 /* animation */
 
-.container{
-    position: relative;
-    /* you have to add a height here if your container isn't otherwise set 
-       becuse the absolutely positioned image divs won't calculate the height 
-       for you */
-    height: 100px;
+.fade-in {
+    -webkit-animation: fadein 2.5s; /* Safari and Chrome */
+    -moz-animation: fadein 2.5s; /* Firefox */
+    -ms-animation: fadein 2.5s; /* Internet Explorer */
+    -o-animation: fadein 2.5s; /* Opera */
+    animation: fadein 2.5s;
 }
-.image-repeat{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.animate-show, .animate-hide {
-  -webkit-transition:all linear 1s;
-  -moz-transition:all linear 1s;
-  -ms-transition:all linear 1s;
-  -o-transition:all linear 1s;
-  transition:all linear 1s;
-
+    
+/*@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-.animate-show {
-  opacity:0;
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-.animate-show.animate-show-active {
-  opacity:1;
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+*/
